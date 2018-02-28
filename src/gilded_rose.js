@@ -18,24 +18,13 @@ class Shop {
 
       if (this.items[i].name != 'Aged Brie' && this.items[i].name != 'Backstage passes to a TAFKAL80ETC concert') {//main if starts
             // console.log("Inside loop top");
-
-            if (this.items[i].quality > 0) {//inner if starts
-              // console.log("Inside loop 2");
-
-                if (this.items[i].name != 'Sulfuras, Hand of Ragnaros') {
-
+            if ((this.items[i].quality > 0 && this.items[i].name != 'Sulfuras, Hand of Ragnaros')) {//inner if starts
                   this.items[i].quality = this.items[i].quality - 1;
-
-                }
-
-              }//inner if ends
-
+                }//inner if ends
       } else {
-
 
             if (this.items[i].quality < 50) {
               // console.log("Inside loop middle");
-
               this.items[i].quality = this.items[i].quality + 1;
               if (this.items[i].name == 'Backstage passes to a TAFKAL80ETC concert') {
 
