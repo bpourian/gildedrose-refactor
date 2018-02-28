@@ -1,10 +1,10 @@
-class Item {
-  constructor(name, sellIn, quality){
-    this.name = name;
-    this.sellIn = sellIn;
-    this.quality = quality;
-  }
-}
+// class Item {
+//   constructor(name, sellIn, quality){
+//     this.name = name;
+//     this.sellIn = sellIn;
+//     this.quality = quality;
+//   }
+// }
 
 class Shop {
 
@@ -17,10 +17,10 @@ class Shop {
     for (var i = 0; i < this.items.length; i++) { //main loop starts
 
       if (this.items[i].name != 'Aged Brie' && this.items[i].name != 'Backstage passes to a TAFKAL80ETC concert') {//main if starts
-            console.log("Inside loop top");
+            // console.log("Inside loop top");
 
             if (this.items[i].quality > 0) {//inner if starts
-              console.log("Inside loop 2");
+              // console.log("Inside loop 2");
 
                 if (this.items[i].name != 'Sulfuras, Hand of Ragnaros') {
 
@@ -34,7 +34,7 @@ class Shop {
 
 
             if (this.items[i].quality < 50) {
-              console.log("Inside loop middle");
+              // console.log("Inside loop middle");
 
               this.items[i].quality = this.items[i].quality + 1;
               if (this.items[i].name == 'Backstage passes to a TAFKAL80ETC concert') {
@@ -58,7 +58,7 @@ class Shop {
       /////////////////////
 
       if (this.items[i].name != 'Sulfuras, Hand of Ragnaros') {// second if statement starts
-        console.log("Inside loop bottom");
+        // console.log("Inside loop bottom");
 
         this.items[i].sellIn = this.items[i].sellIn - 1;
         }// second if ends
@@ -68,11 +68,11 @@ class Shop {
 
 
       if (this.items[i].sellIn < 0) { // third if starts
-        console.log("Inside loop 2");
+        // console.log("Inside loop 2");
 
         if (this.items[i].name != 'Aged Brie') {
                   if (this.items[i].name != 'Backstage passes to a TAFKAL80ETC concert') {
-                    console.log("Inside loop 3");
+                    // console.log("Inside loop 3");
 
                         if (this.items[i].quality > 0) {//inner if starts
 
@@ -81,7 +81,7 @@ class Shop {
                                         }
                                 }
                     } else {
-                        console.log("Inside loop 4");
+                        // console.log("Inside loop 4");
                         this.items[i].quality = this.items[i].quality - this.items[i].quality;
                         }
         } else {
@@ -102,5 +102,5 @@ class Shop {
     return this.items;
   }
 
-  
+
 }

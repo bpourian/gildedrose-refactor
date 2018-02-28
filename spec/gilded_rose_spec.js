@@ -91,7 +91,6 @@ describe("Gilded Rose", function() {
     it("shold return item sellin and quality", function () {
       const gildedRose = new Shop([ new Item("Random",0, 50) ]);
       const items = gildedRose.updateQuality();
-      console.log(items)
       expect(items[0].quality).toEqual(48);
       expect(items[0].sellIn).toEqual(-1)
     })

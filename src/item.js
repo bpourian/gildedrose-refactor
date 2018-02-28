@@ -3,17 +3,5 @@ class Item {
     this.name = name;
     this.sellIn = sellIn;
     this.quality = quality;
-
-
-class Shop {
-
-  constructor(items=[]){
-    this.items = items;
   }
-
-  updateQuality() {
-
-
-  }
-
 }
