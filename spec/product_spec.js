@@ -4,6 +4,7 @@ describe("Product class test", function () {
 
     var product = new Product(new Item("Aged Brie",1, 2))
     var product2 = new Product(new Item("Sulfuras, Hand of Ragnaros",2, 0))
+    var product3 = new item
     // console.log(product.item_class.name)
     // const shop = new Shop([product, product2]);
     // console.log(shop);

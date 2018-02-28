@@ -9,7 +9,7 @@ Shop.prototype.addProductConditions = function (name, sellIn, quality) {
 };
 
 Shop.prototype.existingProductConditions = function () {
-  this.conditionArray = [["Aged Brie",-1, 1],["Sulfuras, Hand of Ragnaros",2, 0] ]
+  this.conditionArray = [["Aged Brie",-1, 1],["Sulfuras, Hand of Ragnaros",2, 0]]
 };
 
 Shop.prototype.updateQuality = function () {
