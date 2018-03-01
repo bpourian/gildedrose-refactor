@@ -34,8 +34,9 @@ describe("Gilded Rose", function() {
   describe("Sulfuras, Hand of Ragnaros tests", function () {
 
     it("shold return item name", function () {
-      const gildedRose = new Shop([ new Item("Sulfuras, Hand of Ragnaros",0, 0) ]);
+      const gildedRose = new Shop([ new Item("Sulfuras, Hand of Ragnaros",10, 2) ]);
       const items = gildedRose.updateQuality();
+      console.log(items)
       expect(items[0].name).toEqual("Sulfuras, Hand of Ragnaros");
     })
 
